@@ -16,6 +16,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputLayout
 import com.mint.daniel.R
+import com.mint.daniel.utils.ErrorState
 import com.mint.daniel.utils.ViewModelFactory
 
 

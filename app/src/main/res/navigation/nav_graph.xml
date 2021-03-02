@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/landingFragment"
-        android:name="com.dims.cardinfofinder.screens.landing.LandingFragment"
+        android:name="com.mint.daniel.Activities.landingPage.LandingFragment"
         android:label="fragment_landing"
         tools:layout="@layout/fragment_landing" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/inputFragment"
-        android:name="com.dims.cardinfofinder.screens.input.InputFragment"
+        android:name="com.mint.daniel.Activities.inputActivity.InputFragment"
         android:label="fragment_input"
         tools:layout="@layout/fragment_input" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/scanFragment"
-        android:name="com.dims.cardinfofinder.screens.scan.ScanFragment"
+        android:name="com.mint.daniel.Activities.ScanActivity.ScanFragment"
         android:label="fragment_scan"
         tools:layout="@layout/fragment_scan" >
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.dims.cardinfofinder.screens.result.ResultFragment"
+        android:name="com.mint.daniel.Activities.resultAcitivty.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <argument

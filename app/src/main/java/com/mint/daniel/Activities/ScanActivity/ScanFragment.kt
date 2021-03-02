@@ -13,13 +13,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
-import com.dims.cardinfofinder.screens.scan.ScanViewModel
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.text.TextRecognizer
 import com.google.android.material.snackbar.Snackbar
 import com.mint.daniel.R
 import com.mint.daniel.utils.OCRConfig
 import com.mint.daniel.utils.Processor
+import com.mint.daniel.utils.ViewModelFactory
 import java.io.IOException
 
 
@@ -96,34 +96,34 @@ class ScanFragment : Fragment() {
         ) {
             requestPermissions(arrayOf(Manifest.permission.CAMERA), requestID)
         } else {
-            surfaceView.holder
-                .addCallback(
-                    getSurfaceViewCallback(surfaceView, cameraSource)
-                )
+//            surfaceView.holder
+//                .addCallback(
+//                    getSurfaceViewCallback(surfaceView, cameraSource)
+//                )
         }
     }
 
-    private fun getSurfaceViewCallback(surfaceView: SurfaceView, cameraSource: CameraSource)
-            : SurfaceHolder.Callback {
-        return object : SurfaceHolder.Callback {
-            override fun surfaceChanged(holder: SurfaceHolder?, format: Int,
-                                        width: Int, height: Int) {
-            }
-
-            override fun surfaceDestroyed(holder: SurfaceHolder?) {
-                cameraSource.stop()
-            }
-
-            @SuppressLint("MissingPermission")
-            override fun surfaceCreated(holder: SurfaceHolder?) {
-                try {
-                    cameraSource.start(surfaceView.holder)
-                } catch (e: IOException) {
-                    e.printStackTrace()
-                }
-            }
-        }
-    }
+//    private fun getSurfaceViewCallback(surfaceView: SurfaceView, cameraSource: CameraSource)
+//            : SurfaceHolder.Callback {
+//        return object : SurfaceHolder.Callback {
+//            override fun surfaceChanged(holder: SurfaceHolder?, format: Int,
+//                                        width: Int, height: Int) {
+//            }
+//
+//            override fun surfaceDestroyed(holder: SurfaceHolder?) {
+//                cameraSource.stop()
+//            }
+//
+//            @SuppressLint("MissingPermission")
+//            override fun surfaceCreated(holder: SurfaceHolder?) {
+//                try {
+//                    cameraSource.start(surfaceView.holder)
+//                } catch (e: IOException) {
+//                    e.printStackTrace()
+//                }
+//            }
+//        }
+//    }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String?>,
                                             grantResults: IntArray) {

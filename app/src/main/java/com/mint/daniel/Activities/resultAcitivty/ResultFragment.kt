@@ -13,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import com.mint.daniel.R
+import com.mint.daniel.utils.*
 import java.util.*
 
 class ResultFragment : Fragment() {

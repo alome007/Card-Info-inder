@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".screens.scan.ScanFragment">
+    android:background="@color/colorPrimaryDark">
     <SurfaceView
         android:id="@+id/surfaceView"
         android:layout_width="match_parent"
